@@ -25,7 +25,7 @@ app.get('/', (req, res)=>{
     )
 
     userModel.insertMany([addNew]);
-    res.send(`<h1>User: ${addNew.name} is Added</h1>`)
+    res.send(`<div><h1>User is Added</h1><p>name:  ${addNew.name}</p><p>sid:  ${addNew.sid}</p></div>`)
 });
 
 
